@@ -1,0 +1,39 @@
+
+// File gives necessary info to npm to identify the project & project dependencies 
+// using npm init in terminal you can enter the information 
+{
+  "name": "todolistapi",
+  "version": "1.0.0",
+  "description": "RESTful todoListApi",
+  "main": "index.js", //main js file that defines the package entry point
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", //no test suit specified to run
+    "start": "nodemon server.js" //automatically triggers the server to run, no need of global installation
+  },
+  "repository": {
+    "type": "git",
+    //repository for the code
+    "url": "git+https://github.com/meghajndl/todoListApi.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "Tutorial"
+  ],
+  "author": "Megha Jindal",
+  "license": "ISC",
+  //URL for bugs issues fixing 
+  "bugs": {
+    "url": "https://github.com/meghajndl/todoListApi/issues"
+  },
+  //read me file path for isntrauctions & details
+  "homepage": "https://github.com/meghajndl/todoListApi#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0" // nodemon version
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2", // body-parser version
+    "express": "^4.14.0", //express version
+    "mongoose": "^5.7.7" //mongoose version
+  }
+}
